@@ -1,11 +1,47 @@
-/* 
+body {
+  background-color: #050b17;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+/* contenedor */
+.tree {
+  width: 260px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
 
-*/
+/* triángulos base (forma) */
+.tri {
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-bottom: 200px solid #2e9b57;
+}
+
+/* capa 2 */
+.tri.layer-2 {
+  margin-top: -120px;
+  border-left-width: 190px;
+  border-right-width: 190px;
+  border-bottom-width: 222px;
+}
+
+/* capa 3 */
+.tri.layer-3 {
+  margin-top: -120px;
+  border-left-width: 220px;
+  border-right-width: 220px;
+  border-bottom-width: 245px;
+}
+
+.trunk {
+  margin-top: -10px;
+  width: 40px;
+  height: 70px;
+  background: #3a2a1f;
+  border-radius: 6px;
+  z-index: -1;
+}

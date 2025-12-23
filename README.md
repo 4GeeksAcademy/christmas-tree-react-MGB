@@ -1,39 +1,96 @@
-# Hello World with React boilerplate
+# 🎄 React Christmas Tree – Luces Aleatorias
 
-Start coding a react application
+Este ejercicio consiste en crear un **árbol de Navidad interactivo en React**, donde las luces se encienden y apagan de forma automática y aleatoria.
 
-> If you are working locally instead of using codespaces or gitpod, please follow [local installation steps](#local-installation-skip-if-you-are-working-on-codespaces-or-gitpod) and come back to this part of the readme.
+El objetivo principal es practicar conceptos fundamentales de React **sin añadir complejidad innecesaria**, centrándonos en estado, efectos y renderizado dinámico.
 
-## How to start coding?
+---
 
-- Install the packages with `$ npm install`.
-- Run the webpack server with `$ npm run start`
+## 🎯 Objetivos de Aprendizaje
 
-You can update the `styles/index.css` or `js/index.js` depending on your needs.
-Add more files into your, `./src/js/components` or styles folder as you need them.
+Al completar este ejercicio, serás capaz de:
 
-## Local Installation (skip if you are working on codespaces or gitpod)
+* Crear componentes funcionales en React.
+* Utilizar `useState` para manejar estado.
+* Utilizar `useEffect` junto con `setInterval` y `clearInterval`.
+* Renderizar listas de elementos dinámicamente.
+* Generar valores aleatorios con `Math.random`.
+* Aplicar clases CSS de forma condicional.
+* Aprovechar clases de **Bootstrap** para estilos y colores.
+* Separar correctamente lógica (JavaScript) y presentación (CSS).
 
-Download the boilerplate using git
+---
 
-```
-$ git clone https://github.com/4GeeksAcademy/react-hello.git
-$ cd react-hello
-```
+## 🧩 Descripción del Ejercicio
 
-## Publish your website!
+Se proporciona un **template base** que ya incluye:
 
-This boilerplate is 100% compatible with the free [github pages](https://pages.github.com/) and [vercel](https://vercel.com/) hosting.
+* La estructura visual del árbol (estrella, árbol y tronco).
+* Un CSS mínimo para posicionar las luces.
+* Un contenedor preparado para las bombillas.
 
-It takes just 2 minutes to deploy, [click here to start the process](https://4geeks.com/docs/start/deploy-to-render-com).
+👉 **No se incluye ninguna lógica de React**.
 
-## Other features
+Tu tarea será implementar el comportamiento de las luces.
 
-- Automatic Code Formatting: Use of [Prettier](https://prettier.io/) for automatic code indentation and formatting.
-- Error reporting: Use of [eslint](https://eslint.org/) for better error reporting.
+---
 
-### Contributors
+## ✅ Requisitos Funcionales
 
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
+Debes implementar lo siguiente:
 
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
+1. Crear un estado para gestionar las luces.
+2. Decidir cuántas luces hay en total.
+3. Encender **N luces a la vez**.
+4. Las luces encendidas deben ser **aleatorias**.
+5. Cambiar las luces cada cierto tiempo usando `setInterval`.
+6. Limpiar correctamente el intervalo cuando el componente se desmonta.
+7. Usar clases de Bootstrap para los colores de las luces:
+
+   * `bg-success`
+   * `bg-danger`
+   * `bg-primary`
+   * `bg-warning`
+   * `bg-info`
+8. Aplicar la clase `is-on` solo a las luces encendidas para activar el efecto glow.
+
+---
+
+## 💡 Pistas
+
+* Usa `useState` para guardar qué luces están encendidas.
+* Usa `useEffect` para manejar el temporizador.
+* Puedes usar un array normal o un bucle `for` para crear las luces.
+* Revisa bien la limpieza del intervalo (`clearInterval`).
+
+---
+
+## ▶️ ¿Cómo comenzar a codificar?
+
+* Instala los paquetes con `$ npm install`.
+* Ejecuta el servidor de webpack con `$ npm run start`.
+
+---
+
+## 🚀 Extras (Opcional)
+
+Si terminas el ejercicio básico, puedes intentar:
+
+* Añadir un botón **Start / Stop**.
+* Permitir cambiar el número de luces encendidas.
+* Variar la velocidad del intervalo.
+* Cambiar los colores de forma aleatoria.
+* Añadir animaciones CSS suaves.
+
+---
+
+## 👥 Contribuidores
+
+Esta plantilla fue creada como parte del
+[Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) de **4Geeks Academy** por
+[Alejandro Sánchez](https://twitter.com/alesanchezr), **Carlos Atanes Vences** y otros contribuyentes.
+
+Descubre más sobre nuestro
+[Curso de Desarrollo Full Stack](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer)
+y
+[Bootcamp de Ciencia de Datos](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
