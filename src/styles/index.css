@@ -45,3 +45,45 @@ body {
   border-radius: 6px;
   z-index: -1;
 }
+
+.light {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute; 
+  z-index: 10;
+  transition: box-shadow 0.3s ease;
+}
+
+.red {
+  background-color: #ff4d4d;
+  box-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff4d4d;
+  animation: blink-red 1.5s infinite alternate;
+}
+
+.yellow {
+  background-color: #fffa65;
+  box-shadow: 0 0 10px #fffa65, 0 0 20px #fffa65;
+  animation: blink-yellow 1.5s infinite alternate;
+}
+
+.blue {
+  background-color: #4b7bec;
+  box-shadow: 0 0 10px #4b7bec, 0 0 20px #4b7bec;
+  animation: blink-blue 1.5s infinite alternate;
+}
+
+@keyframes blink-red {
+  0% { opacity: 0.4; box-shadow: 0 0 5px #ff4d4d; }
+  100% { opacity: 1; box-shadow: 0 0 15px #ff4d4d, 0 0 25px #ff4d4d; }
+}
+
+@keyframes blink-yellow {
+  0% { opacity: 0.4; box-shadow: 0 0 5px #fffa65; }
+  100% { opacity: 1; box-shadow: 0 0 15px #fffa65, 0 0 25px #fffa65; }
+}
+
+@keyframes blink-blue {
+  0% { opacity: 0.4; box-shadow: 0 0 5px #4b7bec; }
+  100% { opacity: 1; box-shadow: 0 0 15px #4b7bec, 0 0 25px #4b7bec; }
+}
